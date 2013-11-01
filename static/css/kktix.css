@@ -1,0 +1,14 @@
+.registrano-blog-badge { font: 20px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif; border: 1px solid #eee ;-moz-border-radius:10px; -webkit-border-radius: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px;margin-bottom: 20px; } 
+.registrano-blog-badge div { margin: 0; padding: 0; }
+.registrano-blog-badge.w-180 { width: 178px; } 
+.registrano-blog-badge.w-700 { width: 700px;  } 
+.registrano-blog-badge.c-black { background: #000; }
+.registrano-blog-badge h5 { margin: 0; padding: 10px; font-size: 24px; font-weight: normal; background: #ef405f; color: #fff; -webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px  }
+.registrano-blog-badge .bd { margin: 5px 10px; } 
+.registrano-blog-badge .event-date { color: #999; }
+.registrano-blog-badge .event-attendees { margin: 3px 0; color: #c00; }
+.registrano-blog-badge .event-link { display: block; text-align: center; margin: 0 0 10px 0; padding: 5px; background: #ef405f; text-decoration: none; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.registrano-blog-badge .event-link:hover { background: #f88a9d; color: #f2f2f2; }
+.registrano-blog-badge .event-attendees-list { list-style: none; margin: 0 0 0 3px; padding: 0; }
+.registrano-blog-badge .event-attendees-list li { list-style: none; margin: 0; padding: 0; display: inline; }
+.registrano-blog-badge .event-attendees-list li img { margin: 0 2px 2px; padding: 0; display: inline; width: 32px; height: 32px; border: 1px solid #eee; }

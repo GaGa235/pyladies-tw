@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title> PyLadies @ Taiwan! </title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="shortcut icon" href="/static/img/pyfavicon.png">
+
+	    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link href="/static/css/snail-flatui.css" rel="stylesheet" media="screen">
+	    <link href="/static/css/kktix.css" rel="stylesheet" media="screen">
+
+	    <script src="/static/js/jquery-1.10.2.min.js"></script>
+		<script src="/static/js/jquery-ui.min.js"></script>
+		<script src="/static/js/jquery.blockUI.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="/static/js/bootstrap-formhelpers-phone.format.js"></script>
+		<script src="/static/js/bootstrap-formhelpers-phone.js"></script>
+
+</head>
+	<body>
+		<header>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<span class="navbar-brand">
+						<img src="/static/img/pyladiestw-logo-land.png" width="167" height="80">
+					</span>
+					<span>
+	                  	<ul class="nav">
+		                    <li class="active"><a href="#fakelink">Home</a></li>
+		                    <li><a href="#fakelink">Events</a></li>
+		                    <li><a href="#fakelink">PyLadies @ TW</a></li>
+		                    <li><a href="#fakelink">Join Us!</a></li>
+	                  	</ul> <!-- /nav -->
+	                </span>
+	            </div>
+			</div>
+		</header>
+		<div class="container-fluid">
+			<div class="row-fluid mvxll">
+			  	<div class="span8 mrl paragraph1">
+			  		<h2> PyLadies Taiwan here! </h2>
+			  		 <p>PyLadies 是一個專屬於女生的 Python 愛好者聚會，專供喜歡 Python 的女生、想學 Python 的女生、想瞭解 Python 的女生，彼此交流、交換心得，聊天認識朋友的地方。</p>
+			  		 <p>PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python 社群中成為主動的參與者與領導者。</p>
+			  		 <p>我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 Python 有興趣，歡迎你來參加喔！</p>
+			  	</div><!--span6(1)-->
+			  	<div class="span3 mll">
+			  		<img src="static/img/pyladiestw-portray.png" class="pull-rught">
+			  	</div><!--span5(2)-->
+			</div><!--row-fluid mvxll-->
+			<div class="row-fluid mvxll paragraph2" id="events">
+				<div class="span7">
+					<h4>本月活動</h4>
+					<div class="registrano-blog-badge w-220" id="registrano-blog-badge-pyladies-tw-201309"></div>
+					<script src="https://assets.kktix.com/javascripts/blogbadge/zh-tw.js" type="text/javascript" defer="defer"></script>
+				</div>
+				<div class="span5 pull-right">
+					<a class="twitter-timeline" href="https://twitter.com/PyLadiesTW" data-widget-id="395932210919768064">@PyLadiesTW的推文</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+				</div>
+
+			</div> <!-- row-fluid -->
+		</div> <!-- container-fluid -->
+
+		<script type="text/javascript">
+			// Initial
+			$('#appointment_form').hide()
+			$('.calltag').hide()
+
+			
+			// overlay layout
+			$.blockUI.defaults.message = null
+			$.blockUI.defaults.overlayCSS ={
+				cursor: null,
+				backgroundColor : '#655c89',
+				opacity:         0.91, 
+			}
+
+			$('#step2_and_step3').block();
+
+			$('.btn-warning').on('click',function(){
+				$('#step2_and_step3').unblock();
+				$('#step3').block();
+			})
+
+			// Step 1
+			$(".btn-warning").on('click', function(){
+		      	var dr_name = $(this).children().children().text()
+		      	$('#doctor_name').val(dr_name)
+		      });
+
+			$('.doctor_choose').on('click', function(){ 
+     			$('.doctor_choose.active').removeClass('active')
+     			$(this).addClass('active')
+     			$('#pick_time').empty()
+     			$('.calltag').hide()
+     			
+     		});
+
+			// Step 2.1
+			$("#datepicker").datepicker({
+				beforeShowDay: $.datepicker.noWeekends,
+				buttonImage: "static/img/planner-primary.png",
+				buttonImageOnly: true,
+				dateFormat: "yymmdd",
+				minDate: 0,
+				maxDate: "+3M +10D",
+				showOn: "button"}
+			); // .datepicker end
+
+			// Step 2.2
+			$("#datepicker").change(function() {
+				// clean up
+				$('#pick_time').empty()
+
+				// set date to form for /appointment/make/ handler
+				var date = $('#datepicker').val()
+				var doctor = $('#doctor_name').val()
+				if (!doctor.length) {
+					alert('Please choose at least one doctor.')
+				} // if end
+
+				else {
+	  			$.ajax({
+	  				url: "/appointment/query/timeline/" + doctor + "/" + date,
+	  				type: "GET",
+	  				success: function(response_json){
+	  					response_json = $.parseJSON(response_json)
+	  					$.each(response_json, function(index, value){
+	  						//alert(value)
+	  						$('#pick_time').append("<div class='pick_time pick_timetable'>" + value + "</div>")
+	  						//
+	  						$('#step3').unblock();
+	  						$('.calltag').delay(800).fadeIn();
+
+	  					}); //.each end				
+	  				} // success end
+	  			}) //.ajax end	
+				} // else end
+  		}); // .change end
+
+			// Step 3
+			//$(document).on(events, selector, data, handler);
+			$('#pick_time').on('click', '.pick_time', function(){
+				var dr_name = $('#dr_name').text()
+				var time = $(this).text()
+
+				// set time to $('#date') with its value
+				// format would be 'YYYYMMDDHH'
+				var date = $('#datepicker').val()
+				var date_time = date + time
+				$('#date').val("")
+				$('#date').val(date_time)
+
+				$('#choose_datetime').hide()
+				$('#appointment_form').show()
+				$('[autofocus]:first').focus()
+			}); // #make_appointment.on end
+
+			//
+
+
+		// Revise the schedule 
+		$("#revise_schedule").on('click',function(){
+			$('#choose_datetime').show()
+			$('.calltag').hide()
+			$('#appointment_form').hide()
+			$('#datepicker').empty()
+			$('#pick_time').empty()
+			$('#step2_and_step3').block()
+			$('.doctor_choose.active').removeClass('active')
+		});	
+
+
+  		$("#make_appointment").submit(function(event){
+
+			  $('#date').removeAttr("disabled", "disabled")
+			  $('#doctor_name').removeAttr("disabled", "disabled")
+
+			  // Stop form from submitting normally
+			  event.preventDefault();
+
+			  var $form = $(this),
+			  url = $form.attr( "action" );
+			  var form_data = $("input[name='form_data']")
+			  var posting = $.post( url, form_data.serialize())
+
+			  posting.done(function(data){
+			  	console.log('from server return', data)
+			  	$('#appointment_form').block({
+			  		message:'<h4>We\'ve got appointment for you.</h4>',
+			  		css:{width: '400px',
+			  				 height:'100px',
+			  				 color: '#FFF',
+			  				 backgroundColor:'#655c89'}
+			  	})
+			  	setTimeout(function(){
+			  		window.location.reload();
+			  	}, 2000);
+			  	
+			  });
+			}); // #make_appointment.submit end
+
+		</script>
+	</body>
+	<footer>
+	</footer>
+</html>
+
+
