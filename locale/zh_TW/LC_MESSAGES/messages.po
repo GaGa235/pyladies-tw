@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-01 22:03+0800\n"
+"POT-Creation-Date: 2013-11-01 22:52+0800\n"
 "PO-Revision-Date: 2013-11-01 22:04+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
@@ -20,5 +20,12 @@ msgstr ""
 
 #: templates/500.html:10
 msgid "抱歉！有點不對勁..."
-msgstr ""
+msgstr "抱歉！有點不對勁..."
 
+#: templates/index.html:62
+msgid "本月活動"
+msgstr "本月活動"
+
+#: templates/index.html:66
+msgid "活動集錦"
+msgstr "活動集錦"
