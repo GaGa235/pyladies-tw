@@ -14,17 +14,49 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+import config
+import logging
 import os
 import webapp2
 
+from base_handler import BaseHandler
+from webapp2_extras import jinja2
+from webapp2_extras import i18n
+
 from google.appengine.ext.webapp import template
 
-class MainPage(webapp2.RequestHandler):
 
-    def get(self):
-    	path = os.path.join(os.path.dirname(__file__), 'templates/index.html')
-        self.response.out.write(template.render(path, ''))
+### More detail:
+### http://webapp-improved.appspot.com/_modules/webapp2_extras/jinja2.html
+session_config = {}
+session_config['webapp2_extras.sessions'] = {
+    'secret_key': config.SESSION_SECRET_KEY,
+    'cookie_name': config.SESSION_COOKIE_NAME,
+}
+session_config['webapp2_extras.jinja2'] = {
+    'template_path': config.I18N_TEMPLATE_PATH,
+    'environment_args': config.I18N_ENV_ARGS,
+    'globals': config.GLOBALS_SET,
+}
+
+
+class MainPage(BaseHandler):
+	def get(self):
+		locale = self.session.get('locale')
+		logging.info('llllll:%s', locale)
+		i18n.get_i18n().set_locale(locale) 
+		
+		template_dict = {}
+		self.render_template('index.html', template_dict)
+
+
+class SetLocale(BaseHandler):
+  def get(self, locale):
+    self.session['locale'] = locale
+    self.redirect('/')
+
 
 app = webapp2.WSGIApplication([
-    ('/', MainPage)
-], debug=True)
+  	('/', MainPage),
+  	('/set/locale/(.*)', SetLocale),],
+  	debug=True, config=session_config)
