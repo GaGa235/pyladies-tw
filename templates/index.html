@@ -12,19 +12,25 @@
 	    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-formhelpers.css" />
 	    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-formhelpers-countries.flags.css" />
 
+	    <link type="text/css" rel="stylesheet" href="/static/css/normalize.css" />
+	    <link type="text/css" rel="stylesheet" href="/static/css/style.css" />
 
-	    <script src="/static/js/jquery-1.10.2.min.js"></script>
-			<script src="/static/js/jquery-ui.min.js"></script>
-			<script src="/static/js/jquery.blockUI.js"></script>
-			<script src="/static/js/bootstrap.min.js"></script>
-			<script src="/static/js/bootstrap-formhelpers-phone.format.js"></script>
-			<script src="/static/js/bootstrap-formhelpers-phone.js"></script>
+	    <script type="text/javascript" src="/static/js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="/static/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/static/js/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/static/js/bootstrap-formhelpers-phone.format.js"></script>
+		<script type="text/javascript" src="/static/js/bootstrap-formhelpers-phone.js"></script>
 	    <script type="text/javascript" src="/static/js/bootstrap-formhelpers-selectbox.js"> </script>
 	    <script type="text/javascript" src="/static/js/bootstrap-formhelpers-languages.codes.js"> </script>
 	    <script type="text/javascript" src="/static/js/bootstrap-formhelpers-languages.js"> </script>
 	    <script type="text/javascript" src="/static/js/bootstrap-formhelpers-countries.en_US.js"> </script>
 	    <script type="text/javascript" src="/static/js/bootstrap-formhelpers-countries.zh_TW.js"> </script>
 
+	    <script type="text/javascript" src="/static/js/jquery.scrollTo-1.4.3.1.min.js"> </script>
+	    <script type="text/javascript" src="/static/js/jquery.scrollorama.js"> </script>	    
+	    <script type="text/javascript" src="/static/js/jquery.easing.1.3.js"> </script>
+	    <script type="text/javascript" src="/static/js/jquery.scrolldeck.js"> </script>
 
 
 </head>
@@ -37,28 +43,30 @@
 					</span>
 					<span>
           	<ul class="nav">
-              <li class="active"><a href="#fakelink">Home</a></li>
-              <li><a href="#fakelink">Events</a></li>
-              <li><a href="#fakelink">PyLadies @ TW</a></li>
-              <li><a href="#fakelink">Join Us!</a></li>
+              <li><a href="#home" class="nav-button">{% trans %}首頁{% endtrans %}</a></li>
+              <li><a href="#events" class="nav-button">{% trans %}本月活動{% endtrans %}</a></li>
+              <li><a href="#crews" class="nav-button">{% trans %}PyLadies工作人員{% endtrans %}</a></li>
+              <li><a href="#contact" class="nav-button">{% trans %}聯絡我們{% endtrans %}</a></li>
           	</ul> <!-- /nav -->
           </span>
 	      </div>
 			</div>
 		</header>
-		
+
 		<div class="container-fluid">
-			<div class="row-fluid mvxll">
+			<div class="row-fluid mvxll slide" id="home">
 			  	<div class="span8 mrl paragraph1">
 			  		<h4>#!/usr/bin/PyLadies</h4>
 			  		<h4>import  Taiwan</h4>
 			  		<h4 class="mtl">def here():</h4>
-			  		    <pre class="mll"><h6>
-PyLadies 是一個專屬於女生的 Python 愛好者聚會，專供喜歡 Python 的女生、想學 Python 的女生、想瞭解 Python 的女生，彼此交流、交換心得，聊天認識朋友的地方。
+			  		  <pre class="mll">
+			  		    <h6>
+{% trans %}PyLadies 是一個專屬於女生的 Python 愛好者聚會，專供喜歡 Python 的女生、想學 Python 的女生、想瞭解 Python 的女生，彼此交流、交換心得，聊天認識朋友的地方。{% endtrans %}
 
-PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python 社群中成為主動的參與者與領導者。
+{% trans %}PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python 社群中成為主動的參與者與領導者。{% endtrans %}
 
-我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 Python 有興趣，歡迎你來參加喔！</h6>
+{% trans %}我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 Python 有興趣，歡迎你來參加喔！{% endtrans %}
+								</h6>
 			  			</pre>
 
 			  		<h5> if __name__ == '__main__': </h5>
@@ -68,7 +76,8 @@ PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望
 			  		<img src="static/img/pyladiestw-portray.png" class="pull-rught">
 			  	</div><!--span5(2)-->
 			</div><!--row-fluid mvxll-->
-			<div class="row-fluid mvxll paragraph2" id="events">
+
+			<div class="row-fluid mvxll paragraph2 slide" id="events">
 				<div class="span7">
 					<h4>{% trans %}本月活動{% endtrans %}</h4>
 					<div class="registrano-blog-badge w-220" id="registrano-blog-badge-pyladies-tw-201310"></div>
@@ -90,6 +99,28 @@ PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 			</div> <!-- row-fluid -->
+
+			<div class="row-fluid mvxll paragraph3 slide" id="crews">
+				<div class="span5">
+					<img src="http://placehold.it/200x200" class="img-round">
+					<h4> xxx </h4>
+					<h6>OOOOOOOOOOOO</h6>
+				</div>
+				<div class="span5">
+				</div>
+			</div> <!-- crews end -->
+
+
+			<div class="row-fluid mvxll paragraph3 slide" id="contact">
+				<div class="span5">
+					<img src="http://placehold.it/200x200" class="img-round">
+					<h4> CONTACT </h4>
+					<h6>xxxxxxxxxxx</h6>
+				</div>
+				<div class="span5">
+				</div>
+			</div> <!-- crews end -->
+
 		</div> <!-- container-fluid -->
 
 		<script type="text/javascript">
@@ -104,7 +135,16 @@ PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望
 				    window.location.reload();
 				  }, 1000);
 				})
-			});
+
+				// Scrolldeck
+				var deck = new $.scrolldeck({
+					buttons: '.nav-button',
+					easing: 'easeInOutExpo',
+					duration: 1500,
+					property:'opacity',
+					end: 0
+				}); //.scrolldeck end
+			}); // document ready end.
 		</script>
 
 	</body>

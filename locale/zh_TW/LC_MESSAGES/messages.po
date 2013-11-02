@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-01 22:52+0800\n"
-"PO-Revision-Date: 2013-11-01 22:04+0800\n"
+"POT-Creation-Date: 2013-11-02 00:17+0800\n"
+"PO-Revision-Date: 2013-11-02 00:06+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -22,10 +22,45 @@ msgstr ""
 msgid "抱歉！有點不對勁..."
 msgstr "抱歉！有點不對勁..."
 
-#: templates/index.html:62
+#: templates/index.html:40
+msgid "首頁"
+msgstr "首頁"
+
+#: templates/index.html:41 templates/index.html:75
 msgid "本月活動"
 msgstr "本月活動"
 
-#: templates/index.html:66
+#: templates/index.html:42
+msgid "PyLadies工作人員"
+msgstr "PyLadies工作人員"
+
+#: templates/index.html:43
+msgid "聯絡我們"
+msgstr "聯絡我們"
+
+#: templates/index.html:58
+msgid ""
+"PyLadies 是一個專屬於女生的 Python 愛好者聚會，專供喜歡 Python 的女生、想學 Python 的女生、想瞭解 Python "
+"的女生，彼此交流、交換心得，聊天認識朋友的地方。"
+msgstr ""
+"PyLadies 是一個專屬於女生的 Python 愛好者聚會，專供喜歡 Python 的女生、想學 Python 的女生、想瞭解 Python "
+"的女生，彼此交流、交換心得，聊天認識朋友的地方。"
+
+#: templates/index.html:60
+msgid ""
+"PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
+"社群中成為主動的參與者與領導者。"
+msgstr "PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會社群中成為主動的參與者與領導者。"
+
+#: templates/index.html:62
+msgid ""
+"我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 "
+"Python 有興趣，歡迎你來參加喔！"
+msgstr ""
+"我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 "
+"Python 有興趣，歡迎你來參加喔！"
+
+#: templates/index.html:79
 msgid "活動集錦"
 msgstr "活動集錦"
+

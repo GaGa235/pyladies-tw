@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-01 22:52+0800\n"
-"PO-Revision-Date: 2013-11-01 22:04+0800\n"
+"POT-Creation-Date: 2013-11-02 00:17+0800\n"
+"PO-Revision-Date: 2013-11-01 23:56+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
@@ -20,12 +20,57 @@ msgstr ""
 
 #: templates/500.html:10
 msgid "抱歉！有點不對勁..."
-msgstr "Sorry, something just not right..."
+msgstr "Sorry, Something just not right..."
 
-#: templates/index.html:62
+#: templates/index.html:40
+msgid "首頁"
+msgstr "Home"
+
+#: templates/index.html:41 templates/index.html:75
 msgid "本月活動"
 msgstr "Events"
 
-#: templates/index.html:66
+#: templates/index.html:42
+msgid "PyLadies工作人員"
+msgstr "PyLadies@TW"
+
+#: templates/index.html:43
+msgid "聯絡我們"
+msgstr "Contact"
+
+#: templates/index.html:58
+msgid ""
+"PyLadies 是一個專屬於女生的 Python 愛好者聚會，專供喜歡 Python 的女生、想學 Python 的女生、想瞭解 Python "
+"的女生，彼此交流、交換心得，聊天認識朋友的地方。"
+msgstr ""
+"We are a group of women developers who love the Python programming "
+"language. "
+
+#: templates/index.html:60
+msgid ""
+"PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
+"社群中成為主動的參與者與領導者。"
+msgstr ""
+"Pyladies is an international mentorship group with a focus on helping "
+"more women become active participants and leaders in the Python open-"
+"source community. Our mission is to promote, educate and advance a "
+"diverse Python community through outreach, education, conferences, events"
+" and social gatherings."
+
+#: templates/index.html:62
+msgid ""
+"我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 "
+"Python 有興趣，歡迎你來參加喔！"
+msgstr ""
+"PyLadies also aims to provide a friendly support network for women and a "
+"bridge to the larger Python world. Anyone with an interest in Python is "
+"encouraged to participate!Some of us hack on Python projects on the side,"
+" some work full-time on Python development, and some are just starting to"
+" learn. We host monthly meetups with different topics such as beginners "
+"meetups, project of python presentation and tutorial. Open to all who "
+"identify as women. Feel free to join us! "
+
+#: templates/index.html:79
 msgid "活動集錦"
 msgstr "Snapshot"
+

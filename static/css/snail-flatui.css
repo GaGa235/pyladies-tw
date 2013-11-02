@@ -5489,8 +5489,10 @@ padding-bottom: 10px;
 }
 
 .paragraph3 {
-  background: #ffffff;
-  color: #ef405f;
+  background: #ef405f;
+  background-image: url(/static/img/blossoms.png);
+  background-repeat: no-repeat;
+  color: #ffffff;
   border: 10px dashed #ef405f;
   padding: 20px;
   width: 90%;
