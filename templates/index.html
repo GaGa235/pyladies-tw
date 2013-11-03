@@ -10,10 +10,7 @@
 	    <link href="/static/css/snail-flatui.css" rel="stylesheet" media="screen">
 	    <link href="/static/css/kktix.css" rel="stylesheet" media="screen">
 	    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-formhelpers.css" />
-	    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-formhelpers-countries.flags.css" />
-
-	    <link type="text/css" rel="stylesheet" href="/static/css/normalize.css" />
-	    <link type="text/css" rel="stylesheet" href="/static/css/style.css" />
+	    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-formhelpers-countries.flags.css" />   
 
 	    <script type="text/javascript" src="/static/js/jquery-1.8.2.min.js"></script>
 		<script type="text/javascript" src="/static/js/jquery-ui.min.js"></script>
@@ -27,10 +24,10 @@
 	    <script type="text/javascript" src="/static/js/bootstrap-formhelpers-countries.en_US.js"> </script>
 	    <script type="text/javascript" src="/static/js/bootstrap-formhelpers-countries.zh_TW.js"> </script>
 
-	    <script type="text/javascript" src="/static/js/jquery.scrollTo-1.4.3.1.min.js"> </script>
+	    <!--<script type="text/javascript" src="/static/js/jquery.scrollTo-1.4.3.1.min.js"> </script>
 	    <script type="text/javascript" src="/static/js/jquery.scrollorama.js"> </script>	    
 	    <script type="text/javascript" src="/static/js/jquery.easing.1.3.js"> </script>
-	    <script type="text/javascript" src="/static/js/jquery.scrolldeck.js"> </script>
+	    <script type="text/javascript" src="/static/js/jquery.scrolldeck.js"> </script>-->
 
 
 </head>
@@ -42,14 +39,14 @@
 						<img src="/static/img/pyladiestw-logo-land.png" width="167" height="80">
 					</span>
 					<span>
-          	<ul class="nav">
-              <li><a href="#home" class="nav-button">{% trans %}首頁{% endtrans %}</a></li>
-              <li><a href="#events" class="nav-button">{% trans %}本月活動{% endtrans %}</a></li>
-              <li><a href="#crews" class="nav-button">{% trans %}PyLadies工作人員{% endtrans %}</a></li>
-              <li><a href="#contact" class="nav-button">{% trans %}聯絡我們{% endtrans %}</a></li>
-          	</ul> <!-- /nav -->
-          </span>
-	      </div>
+			          	<ul class="nav">
+			              <li><a href="#home" class="nav-button">{% trans %}首頁{% endtrans %}</a></li>
+			              <li><a href="#events" class="nav-button">{% trans %}本月活動{% endtrans %}</a></li>
+			              <li><a href="#crews" class="nav-button">{% trans %}PyLadies工作人員{% endtrans %}</a></li>
+			              <li><a href="#contact" class="nav-button">{% trans %}聯絡我們{% endtrans %}</a></li>
+			          	</ul> <!-- /nav -->
+			        </span>
+	      		</div>
 			</div>
 		</header>
 
@@ -60,14 +57,14 @@
 			  		<h4>import  Taiwan</h4>
 			  		<h4 class="mtl">def here():</h4>
 			  		  <pre class="mll">
-			  		    <h6>
+
 {% trans %}PyLadies 是一個專屬於女生的 Python 愛好者聚會，專供喜歡 Python 的女生、想學 Python 的女生、想瞭解 Python 的女生，彼此交流、交換心得，聊天認識朋友的地方。{% endtrans %}
 
 {% trans %}PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python 社群中成為主動的參與者與領導者。{% endtrans %}
 
 {% trans %}我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 Python 有興趣，歡迎你來參加喔！{% endtrans %}
-								</h6>
-			  			</pre>
+
+</pre>
 
 			  		<h5> if __name__ == '__main__': </h5>
 			  		<h5 class="mll">  here() </h5>
@@ -101,23 +98,78 @@
 			</div> <!-- row-fluid -->
 
 			<div class="row-fluid mvxll paragraph3 slide" id="crews">
-				<div class="span5">
-					<img src="http://placehold.it/200x200" class="img-round">
-					<h4> xxx </h4>
-					<h6>OOOOOOOOOOOO</h6>
+				<div class="crewtitle"> PyLadies TW 工作人員 </div>
+				<div class="row mtm">
+					<div class="span6">
+						<div class="row mll">
+							<div class="span4">
+								<img src="/static/img/cat.jpg" class="img-rounded" width="200" height="200">
+							</div>
+							<div class="span8">
+								<h5> 依瑪貓 </h5>
+								<p>長期關心女性與資訊科技議題。目前是WoFOSS台灣女子自由軟體工作小組成員、OpenOffice開發管理團隊成員、OpenOffice Wiki / 論壇 / OOo補給站站長，OpenOffice工程師、課程講師。</p>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="row mll">
+							<div class="span4">
+								<img src="/static/img/sherrylin.jpg" class="img-rounded" width="200" height="200">
+							</div>
+							<div class="span8">
+								<h5> Sherry Lin </h5>
+								<p>目前任職於廣達電腦，擔任軟體工程師，因工作接觸到Python後不可自拔，曾任COSCUP志工。</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="span5">
+				<div class="row mtl">
+					<div class="span6">
+						<div class="row mll">
+							<div class="span4">
+								<img src="/static/img/gaviihuang.png" class="img-rounded" width="200" height="200">
+							</div>
+							<div class="span8">
+								<h5> Gavii Huang </h5>
+								<p>原為在網路圈的行銷企劃人，後來開始自學寫前端頁面，接著開始進入 Python 的領域。目前是自由工作者，關注生活，希望透過 python 實踐更多實用有趣的應用。</p>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="row mll">
+							<div class="span4">
+								<img src="/static/img/pyladiestw-portray.png" class="img-rounded" width="200" height="200">
+							</div>
+							<div class="span8">
+								<h5> XXX </h5>
+								<p>PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div> <!-- crews end -->
 
 
-			<div class="row-fluid mvxll paragraph3 slide" id="contact">
-				<div class="span5">
-					<img src="http://placehold.it/200x200" class="img-round">
-					<h4> CONTACT </h4>
-					<h6>xxxxxxxxxxx</h6>
-				</div>
-				<div class="span5">
+			<div class="row-fluid mvxll paragraph4 slide" id="contact">
+				<div class="row mtm">
+					<div class="span5 mll">
+						<img src="/static/img/spacecontact.png">
+					</div>
+					<div class="span7">
+						<div class="contitle">聯絡我們</div>
+						<div class="span7">
+							<h6>PyLadies Taiwan</h6>
+							<span><img src="/static/img/fb.jpg" width="100" height="100"></span>
+							<span><img src="/static/img/twitter.jpg" width="100" height="100" class="img-rounded"></span>
+							<span><img src="/static/img/googlep.jpg" width="100" height="100"></span>
+							<span><img src="/static/img/googlegroups.gif" width="100" height="100" class=""></span>
+							<span><img src="/static/img/mail.png" width="100" height="100" ></span>
+						</div>
+						<div class="span4">
+							<h6>PyLadies Global</h6>
+							<span><img src="/static/img/pyladies_global.png" width="100" height="100" class="img-rounded"></span>
+						</div>
+					</div>
 				</div>
 			</div> <!-- crews end -->
 
@@ -139,7 +191,7 @@
 				// Scrolldeck
 				var deck = new $.scrolldeck({
 					buttons: '.nav-button',
-					easing: 'easeInOutExpo',
+					easing: 'easeInOutQuint',
 					duration: 1500,
 					property:'opacity',
 					end: 0
@@ -149,19 +201,19 @@
 
 	</body>
 	<footer>
-			<div class="bfh-selectbox bfh-languages" data-language="en_US" data-available="en_US,zh_TW" data-flags="true">
-	      <input type="hidden" id="default_locale" value="">
-	      <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
-	        <span class="bfh-selectbox-option input-medium" data-option=""></span>
-	        <b class="caret"></b>
-	      </a>
-	      <div class="bfh-selectbox-options">
-	        <div role="listbox">
-	          <ul role="option">
-	          </ul>
-	        </div>
-	      </div>
-	    </div> <!-- bfh-selectbox bfh-languages end -->
+			<div class="bfh-selectbox bfh-languages" data-language="zh_TW" data-available="en_US,zh_TW" data-flags="true">
+		      <input type="hidden" id="default_locale" value="">
+		      <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+		        <span class="bfh-selectbox-option input-medium" data-option=""></span>
+		        <b class="caret"></b>
+		      </a>
+		      <div class="bfh-selectbox-options">
+		        <div role="listbox">
+		          <ul role="option">
+		          </ul>
+		        </div>
+		      </div>
+	   		</div> <!-- bfh-selectbox bfh-languages end -->
 	</footer>
 </html>
 

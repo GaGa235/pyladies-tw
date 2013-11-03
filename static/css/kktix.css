@@ -3,7 +3,7 @@
 .registrano-blog-badge.w-180 { width: 178px; } 
 .registrano-blog-badge.w-700 { width: 700px;  } 
 .registrano-blog-badge.c-black { background: #000; }
-.registrano-blog-badge h5 { margin: 0; padding: 10px; font-size: 24px; font-weight: normal; background: #ef405f; color: #fff; -webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px  }
+.registrano-blog-badge h5 { margin: 0; padding: 10px; text-align: center; font-size: 24px; font-weight: normal; background: #ef405f; color: #fff; -webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px  }
 .registrano-blog-badge .bd { margin: 5px 10px; } 
 .registrano-blog-badge .event-date { color: #999; }
 .registrano-blog-badge .event-attendees { margin: 3px 0; color: #c00; }
