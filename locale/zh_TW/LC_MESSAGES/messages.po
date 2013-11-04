@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-04 15:17+0800\n"
+"POT-Creation-Date: 2013-11-04 18:16+0800\n"
 "PO-Revision-Date: 2013-11-02 00:06+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
@@ -27,8 +27,9 @@ msgid "首頁"
 msgstr "首頁"
 
 #: templates/index.html:63
-msgid "最新動態"
-msgstr "最新動態"
+#, fuzzy
+msgid "活動"
+msgstr "活動"
 
 #: templates/index.html:64
 msgid "工作人員"
@@ -47,19 +48,22 @@ msgstr ""
 "的女生，彼此交流、交換心得，聊天認識朋友的地方。"
 
 #: templates/index.html:84
+#, fuzzy
 msgid ""
-"PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
+"我們是一個國際性的 Python 交流組織，主要任務是希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
 "社群中成為主動的參與者與領導者。"
-msgstr "PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
+msgstr ""
+"我們是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
 "社群中成為主動的參與者與領導者。"
 
 #: templates/index.html:86
+#, fuzzy
 msgid ""
-"我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 "
-"Python 有興趣，歡迎你來參加喔！"
+"我們將會於每個月舉辦不同主題的活動，例如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 Python "
+"有興趣，歡迎你來參加喔！"
 msgstr ""
-"我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 "
-"Python 有興趣，歡迎你來參加喔！"
+"我們將會於每個月舉辦不同主題的活動，例如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 Python "
+"有興趣，歡迎你來參加喔！"
 
 #: templates/index.html:102
 msgid "最新活動"
@@ -114,9 +118,6 @@ msgstr ""
 " 原為網路圈的行銷企劃人，後來開始自學寫前端頁面，接著開始進入 Python 的領域。目前是自由工作者，關注生活，希望透過 python "
 "實踐更多實用有趣的應用。"
 
-#~ msgid "本月活動"
-#~ msgstr "本月活動"
-
-#~ msgid "聯絡我們"
-#~ msgstr "聯絡我們"
+#~ msgid "最新動態"
+#~ msgstr "最新動態"
 

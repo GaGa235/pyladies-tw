@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-04 15:17+0800\n"
+"POT-Creation-Date: 2013-11-04 18:16+0800\n"
 "PO-Revision-Date: 2013-11-01 23:56+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -27,8 +27,9 @@ msgid "首頁"
 msgstr "Home"
 
 #: templates/index.html:63
-msgid "最新動態"
-msgstr "News"
+#, fuzzy
+msgid "活動"
+msgstr "Events"
 
 #: templates/index.html:64
 msgid "工作人員"
@@ -43,26 +44,29 @@ msgid ""
 "PyLadies 是一個專屬於女生的 Python 愛好者聚會，專供喜歡 Python 的女生、想學 Python 的女生、想瞭解 Python "
 "的女生，彼此交流、交換心得，聊天認識朋友的地方。"
 msgstr ""
-"We are a group of women developers who love the Python programming "
+"Pyladies is a group of women developers who love the Python programming "
 "language. "
 
 #: templates/index.html:84
+#, fuzzy
 msgid ""
-"PyLadies 是一個國際性的 Python 交流組織，我們的任務主要希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
+"我們是一個國際性的 Python 交流組織，主要任務是希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
 "社群中成為主動的參與者與領導者。"
 msgstr ""
-"Pyladies is an international mentorship group with a focus on helping "
+"We are an international mentorship group with a focus on helping "
 "more women become active participants and leaders in the Python open-"
 "source community."
 
 #: templates/index.html:86
+#, fuzzy
 msgid ""
-"我們將會於每個月約莫第三個週六舉辦不同主題的活動，如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 "
-"Python 有興趣，歡迎你來參加喔！"
+"我們將會於每個月舉辦不同主題的活動，例如：初學者的入門、使用 Python 的應用與經驗分享，相關教學等主題。只要你是女孩並對 Python "
+"有興趣，歡迎你來參加喔！"
 msgstr ""
-"We host monthly meetups around the third Saturday every month with different topics such as beginners "
-"meetups, project of python presentation and tutorial. Open to all who "
-"identify as women. Feel free to join us! "
+"We host monthly meetups around the third Saturday every month with "
+"different topics such as beginners meetups, project of python "
+"presentation and tutorial. Open to all who identify as women. Feel free "
+"to join us! "
 
 #: templates/index.html:102
 msgid "最新活動"
@@ -83,7 +87,7 @@ msgstr "@PyLadiesTW tweets"
 #: templates/index.html:124
 #, fuzzy
 msgid "PyLadies TW 工作人員 "
-msgstr "PyLadies Tw Crews"
+msgstr "PyLadies TW Crews"
 
 #: templates/index.html:132
 msgid " 依瑪貓 "
@@ -94,8 +98,10 @@ msgid ""
 "長期關心女性與資訊科技議題。目前是WoFOSS台灣女子自由軟體工作小組成員、OpenOffice開發管理團隊成員、OpenOffice Wiki "
 "/ 論壇 / OOo補給站站長，OpenOffice工程師、課程講師。 "
 msgstr ""
-"I have focused on female and information technology issue for a long time. I am also a crew of WoFOSS( Women in Free and Open Source Software in Taiwan), OpenOffice developement team member, the web adminstrator of OpenOffice Wiki "
-"/ forum / OOo ，Engineer and lecturer of OpenOffice. "
+"Long-Term Care for Women and Information Technology issues. Taiwanese "
+"woman is currently WoFOSS Free Software Working Group members, OpenOffice"
+" development management team, OpenOffice Wiki / Forum / OOo depot owners,"
+" OpenOffice engineer, lecturer."
 
 #: templates/index.html:143
 msgid " Sherry Lin "
@@ -103,7 +109,10 @@ msgstr " Sherry Lin "
 
 #: templates/index.html:144
 msgid "目前任職於廣達電腦，擔任軟體工程師，因工作接觸到Python後不可自拔，曾任COSCUP志工。"
-msgstr " Working at Quanta Computer Inc, as software engineer. I love Python after working on it. I used to be COSCUP volunteers as well. "
+msgstr ""
+"Currently working in Quanta Computer, as software engineers, because of "
+"work can not extricate themselves after exposure to Python, served COSCUP"
+" volunteers."
 
 #: templates/index.html:156
 msgid " Gavii Huang "
@@ -113,11 +122,13 @@ msgstr " Gavii Huang "
 msgid ""
 " 原為網路圈的行銷企劃人，後來開始自學寫前端頁面，接著開始進入 Python 的領域。目前是自由工作者，關注生活，希望透過 python "
 "實踐更多實用有趣的應用。"
-msgstr "I used to work on internet field as MarCom, then self-learned how to script frontend page. Now, I am self-employed, and also a Python beginner since my first own project- Hygie. My vision is to make more useful and interesting application by Python."
+msgstr ""
+"I used to work on Internet field as MarCom with no programming "
+"experience. Now, I learn and use Javascript to develop my frontend skill."
+" Recently, I use Python with GAE to build my first personal project - "
+"Hygie. Hopefully, we can learn together to build handy and fun "
+"applications with Python."
 
-#~ msgid "本月活動"
-#~ msgstr "Events"
-
-#~ msgid "聯絡我們"
-#~ msgstr "Contact"
+#~ msgid "最新動態"
+#~ msgstr "News"
 
