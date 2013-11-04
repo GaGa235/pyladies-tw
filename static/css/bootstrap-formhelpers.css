@@ -11,6 +11,7 @@
 .bfh-selectbox {
   height: 30px;
   position: relative;
+  margin: 30px 20px 0 0 ;
   /*display: inline-block;*/
 }
 
@@ -35,15 +36,15 @@
 
 .bfh-selectbox-options {
   position: absolute;
-  bottom: 100%;
-  left: 0;
-  z-index: 1000;
+  top: 100%;
+  right: 6px;
+  z-index: 1000;  
   display: none;
-  float: left;
-  min-width: 175px;
+  float: right;
+  min-width: 164px;
   padding: 5px 0;
-  margin: 2px 0 0;
-  background-color: #e2dfd0;
+  margin: 3px 0 0;
+  background-color: transparent;
   /*border: 1px solid #ccc;*/
   border: 2px dashed rgba(0, 0, 0, 0.2);
   *border-right-width: 2px;
@@ -178,7 +179,7 @@
 }
 
 .bfh-selectbox > .bfh-selectbox-toggle {
-  color: #ef405f;
+  color: #fff;
   width: 164px;
   padding: 4px;
   margin-left: 5px;
