@@ -41,13 +41,15 @@ session_config['webapp2_extras.jinja2'] = {
 
 
 class MainPage(BaseHandler):
-	def get(self):
-		locale = self.session.get('locale')
-		i18n.get_i18n().set_locale(locale) 
-		
-		template_dict = {'locale':locale}
-
-		self.render_template('index.html', template_dict)
+  def get(self):
+    locale = self.session.get('locale')
+    
+    if not locale:
+      locale = 'zh_TW'
+    
+    i18n.get_i18n().set_locale(locale)
+    template_dict = {'locale':locale}
+    self.render_template('index.html', template_dict)
 
 
 class SetLocale(BaseHandler):
