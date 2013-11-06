@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-04 18:16+0800\n"
+"POT-Creation-Date: 2013-11-06 21:23+0800\n"
 "PO-Revision-Date: 2013-11-01 23:56+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -53,9 +53,9 @@ msgid ""
 "我們是一個國際性的 Python 交流組織，主要任務是希望透過分享、教育與會議等活動的方式幫助更多女生可以在 Python "
 "社群中成為主動的參與者與領導者。"
 msgstr ""
-"We are an international mentorship group with a focus on helping "
-"more women become active participants and leaders in the Python open-"
-"source community."
+"We are an international mentorship group with a focus on helping more "
+"women become active participants and leaders in the Python open-source "
+"community."
 
 #: templates/index.html:86
 #, fuzzy
@@ -91,7 +91,7 @@ msgstr "PyLadies TW Crews"
 
 #: templates/index.html:132
 msgid " 依瑪貓 "
-msgstr " Cat "
+msgstr " Imacat "
 
 #: templates/index.html:133
 msgid ""
@@ -129,6 +129,18 @@ msgstr ""
 "Hygie. Hopefully, we can learn together to build handy and fun "
 "applications with Python."
 
-#~ msgid "最新動態"
-#~ msgstr "News"
+#: templates/index.html:167
+msgid " Joannie Huang "
+msgstr " Joannie Huang "
+
+#: templates/index.html:168
+msgid ""
+" "
+"目前任職於殷富資訊，擔任App開發專案助理。對程式撰寫是入門者，剛踏進Python的領域，還不熟，但很想熟。平常喜歡東看看西摸摸，接收新奇的東西。喜歡走走和停停，認為人生才正要開始，沒什麼好怕的！"
+msgstr ""
+"Working for Infotech Inc. with being App project assistant."
+"Have some programming experience but just step into the Python territory."
+"Hope meet and share with COOL ladies around the world. 
+"Life is too short to work at the boring company, so let's discover the fun thing around world! "
+
 
