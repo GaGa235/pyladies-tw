@@ -51,11 +51,11 @@
 				});
 			}
 			
-			// convert block elements to absolute position
+			// convert block elements to relative position
 			if (scrollorama.settings.enablePin.toString() === 'true') {
 				for (i=0; i<blocks.length; i++) {
 					blocks[i].block
-						.css('position', 'absolute')
+						.css('position', 'relative')
 						.css('top', blocks[i].top);
 				}
 			}
@@ -108,7 +108,7 @@
 							}
 							if (blocks[i].pin) {
 								blocks[i].block
-								.css('position', 'absolute')
+								.css('position', 'relative')
 								.css('top', blocks[i].top);
 							}
 						}
@@ -119,7 +119,7 @@
 							setProperty(anim.element, anim.property, anim.endVal);
 							if (blocks[i].pin) {
 								blocks[i].block
-                                    .css('position', 'absolute')
+                                    .css('position', 'relative')
                                     .css('top', (blocks[i].top + blocks[i].pin));
 							}
 						}
